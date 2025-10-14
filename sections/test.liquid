@@ -1,0 +1,19 @@
+{% comment %} Simple demo section {% endcomment %}
+<section class="hello-world">
+    <div class="page-width">
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "Hello World (demo)",
+    "settings": [
+      { "type": "text", "id": "title", "label": "Title", "default": "Hello from my section" },
+      { "type": "textarea", "id": "text", "label": "Text", "default": "This is a demo section." }
+    ],
+    "presets": [{ "name": "Hello World (demo)" }]
+  }
+  {% endschema %}
+  

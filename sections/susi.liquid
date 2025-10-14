@@ -1,0 +1,365 @@
+<section id="shopify-section-{{ section.id }}" class="books-section">
+  <div class="books-container">
+    <div class="books-left">
+      <div class="books-grid">
+        {% for block in section.blocks limit: 5 %}
+          <div class="book-item book-item-{{ forloop.index }}" {{ block.shopify_attributes }}>
+            {% if block.settings.image %}
+              <div class="book-cover">
+                {% if block.settings.url != blank %}
+                  <a href="{{ block.settings.url }}">
+                    <img src="{{ block.settings.image | image_url: width: 200 }}" 
+                         alt="{{ block.settings.title | default: 'Book cover' | escape }}" 
+                         loading="lazy">
+                  </a>
+                {% else %}
+                  <img src="{{ block.settings.image | image_url: width: 200 }}" 
+                       alt="{{ block.settings.title | default: 'Book cover' | escape }}" 
+                       loading="lazy">
+                {% endif %}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.title != blank %}
+              <h3 class="book-title">{{ block.settings.title }}</h3>
+            {% endif %}
+            
+            {% if block.settings.description != blank %}
+              <p class="book-description">{{ block.settings.description }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div class="books-right">
+      <div class="author-image">
+        {% if section.settings.author_image %}
+          <img src="{{ section.settings.author_image | image_url: width: 300 }}" 
+               alt="{{ section.settings.author_name | default: 'Author' | escape }}" 
+               loading="lazy">
+        {% endif %}
+      </div>
+      
+      <div class="books-content">
+        {% if section.settings.main_title != blank %}
+          <h2 class="books-main-title">{{ section.settings.main_title }}</h2>
+        {% endif %}
+        
+        {% if section.settings.description != blank %}
+          <p class="books-description">{{ section.settings.description }}</p>
+        {% endif %}
+        
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_url | default: '#' }}" 
+             class="books-cta-button">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#shopify-section-{{ section.id }} {
+  background: linear-gradient(180deg, #ffffff 96.283%, #f4efec 16.954%);
+  padding: 80px 0;
+  min-height: 400px;
+}
+
+#shopify-section-{{ section.id }} .books-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+#shopify-section-{{ section.id }} .books-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+#shopify-section-{{ section.id }} .books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 500px;
+}
+
+#shopify-section-{{ section.id }} .book-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#shopify-section-{{ section.id }} .book-item:hover {
+  transform: translateY(-2px);
+}
+
+#shopify-section-{{ section.id }} .book-item-1 {
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  color: white;
+}
+
+#shopify-section-{{ section.id }} .book-item-2 {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+#shopify-section-{{ section.id }} .book-item-3 {
+  background: linear-gradient(135deg, #ffc107 0%, #ffeb3b 100%);
+  color: #333;
+}
+
+#shopify-section-{{ section.id }} .book-item-4 {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+#shopify-section-{{ section.id }} .book-item-5 {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+#shopify-section-{{ section.id }} .book-cover {
+  margin-bottom: 15px;
+}
+
+#shopify-section-{{ section.id }} .book-cover img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#shopify-section-{{ section.id }} .book-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+#shopify-section-{{ section.id }} .book-description {
+  font-size: 11px;
+  line-height: 1.3;
+  margin: 0;
+  opacity: 0.9;
+}
+
+#shopify-section-{{ section.id }} .books-right {
+  flex: 1;
+  text-align: center;
+  max-width: 500px;
+}
+
+#shopify-section-{{ section.id }} .author-image {
+  margin-bottom: 30px;
+}
+
+#shopify-section-{{ section.id }} .author-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+#shopify-section-{{ section.id }} .books-main-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-align: right;
+  direction: rtl;
+}
+
+#shopify-section-{{ section.id }} .books-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 30px 0;
+  text-align: right;
+  direction: rtl;
+}
+
+#shopify-section-{{ section.id }} .books-cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+#shopify-section-{{ section.id }} .books-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+  background: linear-gradient(135deg, #ad1457 0%, #e91e63 100%);
+}
+
+@media (max-width: 768px) {
+  #shopify-section-{{ section.id }} {
+    padding: 40px 0;
+  }
+  
+  #shopify-section-{{ section.id }} .books-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  #shopify-section-{{ section.id }} .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  #shopify-section-{{ section.id }} .author-image img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  #shopify-section-{{ section.id }} .books-main-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  #shopify-section-{{ section.id }} .books-description {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Books Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author Image"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Author Name",
+      "default": "Author"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title",
+      "default": "הספרים של אבי ברטסמן"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "שירות גבוה אחד מהגדולות, והכבדות שירות אודן וניר שירם גוברו, היא מחכימם הכרווד של החוק, העמקות אל היכרוא היא מיצב תוחרת."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "לכל הספרים"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "book",
+      "name": "Book",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Book Cover"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Book Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Book Description"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Book URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Books Section",
+      "settings": {
+        "main_title": "הספרים של אבי ברטסמן",
+        "description": "שירות גבוה אחד מהגדולות, והכבדות שירות אודן וניר שירם גוברו, היא מחכימם הכרווד של החוק, העמקות אל היכרוא היא מיצב תוחרת. הם אותו שירותי דיגרים וקמאחדת יגירו היתא מחכימם הכרווד של החוק, העמקות אל היכרוא היא מיצב תוחרת האם שותף היקלה שלקם גם ההמבקת קמים בכלל",
+        "button_text": "לכל הספרים"
+      },
+      "blocks": [
+        {
+          "type": "book",
+          "settings": {
+            "title": "מצורים עלויות לטענני",
+            "description": "היא מחכימם הכרווד של החוק, העמקות אל היכרוא - העקרונות"
+          }
+        },
+        {
+          "type": "book",
+          "settings": {
+            "title": "לילה במחתרת",
+            "description": "שירות גבוה אחד מהגדולות והכבדות שירות - מילן תרומינות"
+          }
+        },
+        {
+          "type": "book",
+          "settings": {
+            "title": "NAP",
+            "description": "בין היוגות השונות לאבחון גידולי הלטין וירי הכמות זה הדרוכים - NAP הספר"
+          }
+        },
+        {
+          "type": "book",
+          "settings": {
+            "title": "ספר המלך שלמה הראשון",
+            "description": "היא אל עזר חדש וגדול ההם גם עם היות יכולתי - העיניות - יוניות"
+          }
+        },
+        {
+          "type": "book",
+          "settings": {
+            "title": "החזירים ספר",
+            "description": "היא אל עזר חדש וגדול ההם גם עם היכס החוכם טבל וברל העקרונות וני"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,300 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "susi_Tt4pAm": {
+      "type": "susi",
+      "blocks": {
+        "book_gDrPmV": {
+          "type": "book",
+          "settings": {
+            "image": "shopify://shop_images/optimized_image_1749244297.webp",
+            "title": "מצורים עלויות לטענני",
+            "description": "היא מחכימם הכרווד של החוק, העמקות אל היכרוא - העקרונות",
+            "url": ""
+          }
+        },
+        "book_EbmR7j": {
+          "type": "book",
+          "settings": {
+            "title": "לילה במחתרת",
+            "description": "שירות גבוה אחד מהגדולות והכבדות שירות - מילן תרומינות",
+            "url": ""
+          }
+        },
+        "book_areiQX": {
+          "type": "book",
+          "settings": {
+            "title": "NAP",
+            "description": "בין היוגות השונות לאבחון גידולי הלטין וירי הכמות זה הדרוכים - NAP הספר",
+            "url": ""
+          }
+        },
+        "book_VDQcde": {
+          "type": "book",
+          "settings": {
+            "title": "ספר המלך שלמה הראשון",
+            "description": "היא אל עזר חדש וגדול ההם גם עם היות יכולתי - העיניות - יוניות",
+            "url": ""
+          }
+        },
+        "book_rf7UYX": {
+          "type": "book",
+          "settings": {
+            "title": "החזירים ספר",
+            "description": "היא אל עזר חדש וגדול ההם גם עם היכס החוכם טבל וברל העקרונות וני",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "book_gDrPmV",
+        "book_EbmR7j",
+        "book_areiQX",
+        "book_VDQcde",
+        "book_rf7UYX"
+      ],
+      "disabled": true,
+      "name": "Books Section",
+      "settings": {
+        "author_image": "shopify://shop_images/optimized_image_1749243940.webp",
+        "author_name": "Author",
+        "main_title": "הספרים של אבי ברטסמן",
+        "description": "שירות גבוה אחד מהגדולות, והכבדות שירות אודן וניר שירם גוברו, היא מחכימם הכרווד של החוק, העמקות אל היכרוא היא מיצב תוחרת. הם אותו שירותי דיגרים וקמאחדת יגירו היתא מחכימם הכרווד של החוק, העמקות אל היכרוא היא מיצב תוחרת האם שותף היקלה שלקם גם ההמבקת קמים בכלל",
+        "button_text": "לכל הספרים",
+        "button_url": ""
+      }
+    },
+    "tequila_RHEwry": {
+      "type": "tequila",
+      "name": "Tequila Moments",
+      "settings": {
+        "heading_part1": "Make",
+        "heading_highlight": "unforgettable moments",
+        "heading_part2": "generate referral, deepen loyalty and position you above the noise",
+        "bottle_image": "shopify://shop_images/975c6be43f923294120e4c588fee72685f9ed177.png",
+        "decoration_image": "shopify://shop_images/Make_unforgettable_moments_generate_referral_deepen_loyalty_and_position_you_above_the_noise.png",
+        "cta_text": "Create your own tequila",
+        "cta_url": "",
+        "background_color": "#fdd8c6",
+        "text_color": "#090909",
+        "highlight_color": "#67b7a8",
+        "button_background": "#67b7a8",
+        "button_border": "#090909"
+      }
+    },
+    "tequila_contact_xghhYd": {
+      "type": "tequila-contact",
+      "name": " MD Contact Form ",
+      "settings": {
+        "title_highlight": "Contact",
+        "title_normal": "Form",
+        "subtitle": "<p>Receive <strong>info</strong>, <strong>tips</strong> on how to design your <strong>label</strong>, and <strong>special offer</strong>!</p>",
+        "first_name_placeholder": "First Name",
+        "last_name_placeholder": "Last Name",
+        "email_placeholder": "Main Email",
+        "phone_placeholder": "Phone Number",
+        "button_text": "Yes, send me offers & ideas!",
+        "loading_text": "Sending...",
+        "success_message": "Thank you! Your message has been sent successfully.",
+        "bg_image_left": "shopify://shop_images/500f6164e957c609444ea8dfa07345bfe9fbb10e.jpg",
+        "bg_image_right": "shopify://shop_images/8edc2984d406890ba444ef1c8f076e865f2c6b26.png"
+      }
+    },
+    "tequila_instfeed_zH6NNy": {
+      "type": "tequila-instfeed",
+      "blocks": {
+        "instagram_post_Pajb9N": {
+          "type": "instagram_post",
+          "settings": {
+            "post_image": "shopify://shop_images/8edc2984d406890ba444ef1c8f076e865f2c6b26_f8d387b6-1983-4b4a-8e1b-1e2d451a9684.png",
+            "post_url": ""
+          }
+        },
+        "instagram_post_HXPnUX": {
+          "type": "instagram_post",
+          "settings": {
+            "post_image": "shopify://shop_images/173bdd8077c50922de450bc10c18a9864a254bbf.png",
+            "post_url": ""
+          }
+        },
+        "instagram_post_3XKRxe": {
+          "type": "instagram_post",
+          "settings": {
+            "post_image": "shopify://shop_images/52a7f159b11e3608fb041458f3e2d9d770712188.jpg",
+            "post_url": ""
+          }
+        },
+        "instagram_post_4WiYP3": {
+          "type": "instagram_post",
+          "settings": {
+            "post_image": "shopify://shop_images/6d35ff77c3db63cf905bf62fd0fbcce3c6093e16.png",
+            "post_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "instagram_post_Pajb9N",
+        "instagram_post_HXPnUX",
+        "instagram_post_3XKRxe",
+        "instagram_post_4WiYP3"
+      ],
+      "name": "Instagram Feed",
+      "settings": {
+        "instagram_handle": "inbarrelofficial",
+        "background_color": "#ffffff",
+        "text_color": "#090909",
+        "highlight_color": "#67b7a8",
+        "border_color": "#e5e5e5"
+      }
+    },
+    "teqsis_GA74FD": {
+      "type": "teqsis",
+      "name": "Premium Product Showcase",
+      "settings": {
+        "left_image": "shopify://shop_images/0fee1850135daabcaef427a0fbb2561527030cf5.jpg",
+        "right_image": "shopify://shop_images/270752eb81dd533d2ab8a2d7ffa9ef78f0ed01f1.jpg",
+        "product_image": "shopify://shop_images/8f1cb3a8cf583d3447c0612687a49d5496024b5b.png",
+        "top_description": "It sits on their shelf. It comes out at celebrations. And every time they pour a glass, there's one thing they'll talk about — you.",
+        "bottom_description": "Whether you're celebrating a milestone, thanking a client, or creating bottles for your bar or business — we'll help you craft something people want to talk about.",
+        "top_padding": 40,
+        "bottom_padding": 80,
+        "background_color": "rgba(0,0,0,0)",
+        "mobile_top_padding": 20,
+        "mobile_bottom_padding": 20,
+        "mobile_side_padding": 20,
+        "mobile_gap": 10
+      }
+    },
+    "tagline_ReAiTV": {
+      "type": "tagline",
+      "name": "Tagline Statement",
+      "settings": {
+        "bottle_image": "shopify://shop_images/2bfeb3ce7b287bb9e7b642e47af15460035b3ed8.png",
+        "line_1": "NOT JUST A GIFT",
+        "line_2": "BRAND LOYALTY",
+        "line_3": "WORD-OF-MOUTH",
+        "line_4": "REFERRALS"
+      }
+    },
+    "footer_custom_tequila_d4bGbc": {
+      "type": "footer-custom-tequila",
+      "blocks": {
+        "navigation_link_QYJKM7": {
+          "type": "navigation_link",
+          "settings": {
+            "label": "Home",
+            "url": ""
+          }
+        },
+        "navigation_link_WHKBhw": {
+          "type": "navigation_link",
+          "settings": {
+            "label": "Personalize",
+            "url": ""
+          }
+        },
+        "navigation_link_qQk3EE": {
+          "type": "navigation_link",
+          "settings": {
+            "label": "Corporate",
+            "url": ""
+          }
+        },
+        "navigation_link_YpQeYE": {
+          "type": "navigation_link",
+          "settings": {
+            "label": "About us",
+            "url": ""
+          }
+        },
+        "navigation_link_gU9giy": {
+          "type": "navigation_link",
+          "settings": {
+            "label": "Our Tequila",
+            "url": ""
+          }
+        },
+        "social_link_p96hUE": {
+          "type": "social_link",
+          "settings": {
+            "label": "li",
+            "url": "",
+            "highlight": false
+          }
+        },
+        "social_link_ctBC3h": {
+          "type": "social_link",
+          "settings": {
+            "label": "fb",
+            "url": "",
+            "highlight": true
+          }
+        },
+        "social_link_cK4qzH": {
+          "type": "social_link",
+          "settings": {
+            "label": "in",
+            "url": "",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_QYJKM7",
+        "navigation_link_WHKBhw",
+        "navigation_link_qQk3EE",
+        "navigation_link_YpQeYE",
+        "navigation_link_gU9giy",
+        "social_link_p96hUE",
+        "social_link_ctBC3h",
+        "social_link_cK4qzH"
+      ],
+      "name": "Footer",
+      "settings": {
+        "brand_text": "InBarrel",
+        "brand_texture": "shopify://shop_images/2fbf0b3050d4054337fd149f46d62f660164e345_1.png",
+        "background_pattern": "shopify://shop_images/1_23456791.png",
+        "links_title": "Links",
+        "newsletter_title": "Let's work together",
+        "email_placeholder": "Email",
+        "submit_text": "Submit",
+        "contact_title": "Contact us",
+        "contact_email": "hola@inbarrel.com",
+        "contact_address": "800 4th Ave, Grinnell, IA 50112",
+        "copyright": "© InBarrel Tequila 2023. All rights reserved.",
+        "background_color": "#f1f1ee",
+        "text_color": "#090909",
+        "text_muted": "#09090999",
+        "highlight_color": "#67b7a8",
+        "border_color": "#090909",
+        "button_bg": "#67b7a8"
+      }
+    },
+    "test_WRUCLy": {
+      "type": "test",
+      "name": "Hello World (demo)",
+      "settings": {
+        "title": "Hello from my section",
+        "text": "This is a demo section."
+      }
+    }
+  },
+  "order": [
+    "susi_Tt4pAm",
+    "tequila_RHEwry",
+    "tequila_contact_xghhYd",
+    "tequila_instfeed_zH6NNy",
+    "teqsis_GA74FD",
+    "tagline_ReAiTV",
+    "footer_custom_tequila_d4bGbc",
+    "test_WRUCLy"
+  ]
+}
